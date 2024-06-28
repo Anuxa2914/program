@@ -1,0 +1,63 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    color: #63a063;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a{
+    display: inline-block;
+    font-size: 25px;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover{
+    color: #0ef;
+}
+.home{
+    position: relative;
+    width: 100;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(/portfolio/OIP.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+} */
+
+/* Change color using DOM */
+/* div{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+.widthmax{
+    width: 900px;
+    transition: 5s;
+} */

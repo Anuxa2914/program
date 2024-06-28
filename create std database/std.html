@@ -1,0 +1,249 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT DATA BASE</title>
+    <link rel="stylesheet" href="./std.css">
+</head>
+<body> <tr></tr>
+    <h1>STUDENT DATA BASE</h1>
+    <table border="1">
+        <form >
+            <tr>
+                <td><label for="names">Name</label></td>
+                <td><input type="text" id="names"></td>
+            </tr>
+
+            <tr>
+                <td><label for="age">Age</label></td>
+                <td><input type="number" id="age"></td>
+            </tr>
+
+            <tr>
+                <td><label>Gender</label></td>
+                <td>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">Female</label>
+                </td>
+
+            </tr>
+            <tr>
+            
+            <td><label for="course">Course</label></td>
+                <td>
+                     <input type="checkbox" id="course1" value="HTML">
+                    <label for="course">HTML</label>
+                    <input type="checkbox" id="course2" value="JAVA SCRIPT">
+                    <label for="course">JAVA SCRIPT</label>
+                    <input type="checkbox" id="course3" value="PYTHON">
+                    <label for="course">PYTHON</label> -->
+                    <!-- <select id="course">
+                       <option value="JAVA SCRIPT">JAVA SCRIPT</option>
+                        <option value="HTML">HTML</option>
+                        <option value="PYTHON">PYTHON</option>
+                    </select> 
+
+
+                </td>
+            </tr> 
+            
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email"></td>
+            </tr>
+
+            <tr>
+              <td><button id="add" type="button">ADD</button></td></tr>
+       </form>
+    </table>
+
+   <table border="1">
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>GENDER</th>
+            <th>COURSE</th>
+            <th>EMAIL</th>
+            <th>ACTION</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+    
+   </table>
+<script src="./std.js"></script>   
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT DATA BASE</title>
+    <link rel="stylesheet" href="./std.css">
+</head>
+<body>
+    <h1>STUDENT DATA BASE</h1>
+    <table border="1">
+        <form id="studentForm">
+            <tr>
+                <td><label for="names">Name</label></td>
+                <td><input type="text" id="names" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="age">Age</label></td>
+                <td><input type="number" id="age" required></td>
+            </tr>
+
+            <tr>
+                <td><label>Gender</label></td>
+                <td>
+                    <input type="radio" name="gender" id="male" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female" required>
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="course">Course</label></td>
+                <td>
+                    <select id="course" required>
+                        <option value="JAVA SCRIPT">JAVA SCRIPT</option>
+                        <option value="HTML">HTML</option>
+                        <option value="PYTHON">PYTHON</option>
+                    </select>
+                </td>
+            </tr> 
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button id="add" type="button">ADD</button></td>
+            </tr>
+        </form>
+    </table>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>GENDER</th>
+                <th>COURSE</th>
+                <th>EMAIL</th>
+                <th>ACTION</th>
+            </tr>
+        </thead>
+        <tbody id="studentTableBody">
+         Rows will be dynamically added here -->
+        <!-- </tbody>
+    </table>
+    <script src="./std.js"></script>   
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student database</title>
+    <link rel="stylesheet" href="./std.css">
+</head>
+<body>
+    
+    <h1>STUDENT DATA BASE</h1>
+    <table border="1" class="table-one">
+        <form>
+
+            <tr>
+                <td><label for="fullname">NAME</label></td>
+                <td><input type="text" id="fullname" placeholder="Enter your full name" required></td>
+            </tr>
+            <tr>
+                <td><label for="age">AGE</label></td>
+                <td><input type="number" id="age" placeholder="Enter your age" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="gender">GENDER</label></td> 
+            <td> 
+                <input type="radio" name="gender" id="male" value="male" required>
+                <label for="male" >MALE</label>
+                <input type="radio" name="gender" id="female" value="female" required>
+                <label for="female" >FEMALE</label>
+            </td> 
+            </tr>
+
+            <tr>
+                <td><label for="Course">COURSE</label></td>
+                <td>
+                   <select id="course" required> 
+                
+                 <option value="Java Script">Java Script</option>
+                 <option value="Java">Java</option>
+                 <option value="HTML">HTML</option>
+                 <option value="Python">Python</option>
+
+                </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="email">EMAIL</label></td>
+            <td><input type="email" id="email" placeholder="you@gmail.com" required></td>
+           </tr>
+
+          <tr>
+            <td colspan="2"><button id="add" type="button">SAVE</button></td>
+          </tr>
+
+   
+        </form>
+    </table>
+
+
+
+<table border="1" class="table-two">
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>GENDER</th>
+            <th>COURSE</th>
+            <th>EMAIL</th>
+            <th>ACTION</th>
+        </tr>
+       
+    </thead>
+
+    <tbody id="tablebody">
+
+    </tbody>
+
+ </table>
+
+
+<script src="./std.js"></script>
+</body>
+</html>     
+
+
+
+                
+                
+                
+
+
+                
+           
+
+

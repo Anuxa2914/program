@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student database</title>
+    <link rel="stylesheet" href="./new.css">
+</head>
+<body>
+    
+    <h1>STUDENT DATA BASE</h1>
+    <table border="1" class="table-one">
+        <form>
+
+           <tr>
+                <td><label for="fname">FIRST NAME</label></td>
+                <td><input type="text" id="fname" placeholder="Enter your first name" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="lname">LAST NAME</label></td>
+                <td><input type="text" id="lname" placeholder="Enter your last name" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="middle">MIDDLE INITIAL</label></td>
+                <td><input type="text" id="middle" placeholder="Enter your middle initial" required></td>
+            </tr>
+
+            
+
+            <tr>
+                <td><label for="age">AGE</label></td>
+                <td><input type="number" id="age" placeholder="Enter your age" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="gender">GENDER</label></td> 
+            <td> 
+                <input type="radio" name="gender" id="male" value="male" required>
+                <label for="male" >MALE</label>
+                <input type="radio" name="gender" id="female" value="female" required>
+                <label for="female" >FEMALE</label>
+            </td> 
+            </tr>
+
+            <tr>
+                <td><label for="Course">COURSE</label></td>
+                <td>
+                   <select id="course" required> 
+                
+                 <option value="Java Script">Java Script</option>
+                 <option value="Java">Java</option>
+                 <option value="HTML">HTML</option>
+                 <option value="Python">Python</option>
+
+                </select>
+            </td>
+           </tr>
+
+           <tr>
+            <td><label for="phone">PHONE NUMBER</label></td>
+            <td><input type="number" id="phone" placeholder="Enter your phone number" required></td>
+           </tr>
+
+          <tr>
+            <td><label for="email">EMAIL</label></td>
+            <td><input type="email" id="email" placeholder="you@gmail.com" required></td>
+           </tr>
+
+          <tr>
+            <td colspan="2"><button id="add" type="button" >SAVE</button></td>
+          </tr>
+
+   
+        </form>
+    </table>
+
+
+
+<table border="1" class="table-two">
+    <thead>
+        <tr>
+            <th>S.NO</th>
+            <th>UNIUQE ID</th>
+            <th>FIRST NAME</th>
+            <th>LAST NAME</th>
+            <th>MIDDLE NAME</th>    
+            <th>AGE</th>
+            <th>GENDER</th>
+            <th>COURSE</th>
+            <th>PHONE</th>
+            <th>EMAIL</th>
+            <th>ACTION</th>
+        </tr>
+       
+    </thead>
+
+    <tbody id="tablebody">
+
+    </tbody>
+
+ </table>
+
+
+<script src="./new.js"></script>
+</body>
+</html>     
+
+
+
+                
+                
+                
+
+
+                
+           
+
+
