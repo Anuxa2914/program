@@ -19,9 +19,11 @@ body{
     color:white;
     border-radius: 10px;
     margin: 30px;
+    display: inline-block;
+    vertical-align: top;
 
 }
-.book-name1{
+.container h2{
     color: rgb(42, 106, 158);
 }
 .del{
@@ -52,5 +54,60 @@ body{
     top: 0%;
     left: 0%;
     z-index: 1;
+    display: none;
+
+}  
+
+.popup-box{
+    background-color:rgb(42, 106, 158) ;
+    width: 40%;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 2;
+    display: none;
+}
+
+.popup-box input{
+    background: transparent;
+    border: none;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border-bottom: solid black 2px;
 
 }
+
+.popup-box textarea{
+    background: transparent;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border: solid black 2px;
+
+}
+.popup-box textarea::placeholder{
+    color: black;
+}
+.popup-box input::placeholder{
+    color: black;
+}
+.popup-box button{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin: 5px;
+}
+
+.popup-box input:focus{
+    outline: none;
+}
+.popup-box textarea:focus{
+    outline: none;
+}
+

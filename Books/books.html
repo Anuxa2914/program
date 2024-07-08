@@ -16,23 +16,27 @@
 
     <div class="container">
         <div class="book-container">
-            <h2 class="book-name1">Rich Dad Poor Dad</h2>
+            <h2>Rich Dad Poor Dad</h2>
             <h5>Robert</h5>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum numquam sapiente nisi quasi fugit nesciunt vitae ea inventore veritatis fuga. Voluptas consectetur voluptatum ab. Debitis laudantium impedit vero sed sunt?</p>
-            <button class="del">Delete</button>
+            <button class="del" onclick="deletebook(event)">Delete</button>
         </div>
-        <button class="btn-add" id="btn-add-popup">+</button>
+        
         <div class="popup-overlay"></div>
+        <div class="popup-box">
         <h2>ADD BOOK</h2>
         <form>
             <input type="text" placeholder="Book Title" id="title-input">
-            <input type="text" placeholder="Book Author" id="Author-input">
+            <input type="text" placeholder="Book Author" id="author-input">
             <textarea placeholder="Short Description" id="desc-input"></textarea>
             <button id="add-book">ADD</button>
             <button id="cancel-popup">CANCEL</button>
         </form>
-
     </div>
+    
+    </div>
+
+    <button class="btn-add" id="btn-add-popup">+</button>
 
 
 
