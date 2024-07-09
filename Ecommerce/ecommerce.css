@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+}
+.navbar-links a{
+    text-decoration: none;
+    color: #1d232c;
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+    counter-reset: #1d232c;
+}
+.navbar-toggle{
+    display: none;
+}
+
+.side-navbar{
+    width: 50%;
+    height: 100%;
+    background-color: #1d232c;
+    top: 0%;
+    left: 0;
+    padding: 20px;
+    color: white;
+    position: fixed;
+}
+.side-navbar-link{
+    padding: 30px;
+}
+.side-navbar-link a{
+    text-decoration: none;
+    color:white;
+}
+.side-navbar-link a:hover{
+    text-decoration: underline;
+}
+
+/* Media Query */
+@media screen and (max-width:700px) {
+    .navbar-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    
+}
