@@ -857,6 +857,276 @@
 // })
 // console.log(children)
 
+//reduce ()
+//array.reduce(callback(previous value, currentValue, currentIndex, array), initialValue)
+// let a=[2,44,56,78,55,89,356,78]
+// let add=a.reduce((x,y)=>{
+//     return x+y
+// })
+// console.log(add)
+
+// const people = [
+//     { name: 'Alice', age: 21 ,rs:30},
+//     { name: 'Max', age: 20 ,rs:40},
+//     { name: 'Jane', age: 20,rs:50 },
+//   ];
+
+//   let total=people.reduce((a,b)=>{
+//     return a+b.rs
+//   },0)
+//   console.log(total)
+
+// const numbers = [10, 20, 30, 40, 50];
+// let big=numbers.reduce((a,b)=>{
+//      return a > b ? a:b
+// },0)
+// console.log(big)
+
+// newset()(Remove duplicates)(clear,foreach,entries,value,keys)
+
+// const array = [1, 2, 3, 4, 3, 2, 1];
+// // let  newarray=[...new Set(array)]
+
+// let result=new Set(array)
+// console.log(result);
+
+//array.isarray(it is used to find array or not)
+
+// const numbers = [1, 2, 3, 4, 3, 2, 1];
+// console.log(Array.isArray(numbers));
+
+//  let a="Anusuya"
+//  console.log(Array.isArray(a));
+
+//flat()(converted multi dimensional array to single dimensional array)
+
+// let matrix=[
+//     [1,2,3],
+//     [4,5,6],
+//     [7,8,9],
+
+
+// ]
+
+// let newMatrix=matrix.flat()
+// console.log(newMatrix);
+
+//Multiplr ways to clone an Array
+
+// let number=[1,2,3,4,5,6,7]
+// let a=[...number]
+// console.log(a);
+
+// let b=number.slice()
+// console.log(b);
+
+// let c=[].concat(number)
+// console.log(c);
+
+// let d=Array.from(number)
+// console.log(d);
+
+// let e=JSON.parse(JSON.stringify(number))
+// console.log(e);
+
+//Destucturing(converting array value to single value)
+
+// let numbers=[10,20,30,40,50]
+
+// let [a,b,c,,d]=numbers
+// console.log(a)
+// console.log(b)
+// console.log(c);
+// console.log(d);
+
+// let[a,...b]=numbers
+// console.log(a);
+// console.log(b);
+
+// let number=[[1,2],[3,4],[5,6]]
+// let [[a,b],[c,d],[e,f]]=number
+// console.log(a)
+// console.log(b)
+// console.log(c)
+// console.log(d)
+// console.log(e)
+// console.log(f)
+
+//Object destucturing
+
+// let person={
+//     fname:"Anusuya",
+//     gender:"female",
+//     city:"chennai"
+// }
+
+// let {fname,gender,city}=person
+// console.log(fname);
+// console.log(gender);
+// console.log(city);
+
+// let person={
+//     fname:"Anusuya",
+//     gender:"female",
+//     address:{
+//         state:"Tamil Nadu",
+//         // city:"Chennai"
+//     }
+// }
+
+// let {fname,gender,address:{state,city="unknown"}}=person
+// console.log(fname)
+// console.log(gender)
+// console.log(state)
+// console.log(city);
+
+//Create objects(4 Types-->using object literals(),object constacror(),object.create(),using class() )
+
+// let person={
+//     fname:"Anusuya",
+//     lname:"devi"
+// }console.log(person);
+
+// let person=new Object()
+// person.fname="Anusuya"
+// person.lname="Devi"
+// console.log(person);
+
+// let greet={
+//     SayHellow:function(){
+//         console.log(`Hellow, my name is ${this.fname}`);
+//     }
+// }
+
+// let person=Object.create(greet)
+// person.fname="Anusuya"
+// person.gender="female"
+
+// console.log(person);
+// person.SayHellow()
+
+// let person={
+//     fname:"Anusuya",
+//     gender:"female",
+//     city:"chennai"
+// }
+
+
+// console.log(person.fname);
+// console.log(person["fname"]);
+
+//Iterating through the JS object
+
+
+
+let person = {
+    fname: "Anusuya",
+    lname: "Devi",
+    age: 28,
+    gender: "Female"
+};
+
+//for-in loop
+
+// for(let keys in person){
+//     console.log(`${keys}:${person[keys]}`);
+// }
+
+//using-object.keys
+// let keys=Object.keys(person)
+// console.log(keys);
+
+// keys.forEach(keys=>{
+//     console.log(`${keys}:${person[keys]}`)
+// })
+
+//using-object.value
+// let values=Object.values(person)
+// console.log(values);
+
+// values.forEach(value=>{
+//     console.log(`${value}`)
+// })
+
+// using object.entries
+// let entries=Object.entries(person)
+// console.log(entries)
+// entries.forEach(entries=>{
+//     console.log(`${entries}`);
+// })
+
+// for(let i=0;i<entries.length;i++){
+//     console.log(`${entries[i][0]}:${entries[i][1]}`);
+// }
+
+//CLASS
+// class Cyrus{
+//     constructor(fullname,father,mother){
+//         this.fullname=fullname
+//         this.father=father,
+//         this.mother=mother
+//     }
+
+//     SayHellow(){
+//         console.log("Hello my name is " +this.fullname +" And my father name is "+ this.father +" also my mother name is "+this.mother);
+//     }
+// }
+//  var cyrus=new Cyrus("Cyrus","Xavier","Anusuya")
+//  console.log(cyrus);
+//  cyrus.SayHellow()
+
+//  class Natasha extends Cyrus{
+//     constructor(fullname,father,mother){
+//         super(fullname,father,mother)
+    
+        
+//     }
+
+//  }
+//  var natasha=new Natasha("Natasha","Xavi","Anu")
+//  console.log(natasha);
+//  natasha.SayHellow()
+
+//getter/setter(used in object litarals and classs)
+//getter-print///setter-change the value
+
+// class Circle{
+//     constructor(radius){
+//         this.radius=radius 
+//     }
+//     get diameter(){
+//         return this.radius*2
+//     }
+
+//     set diameter(diameter){
+//         this.radius=diameter/2
+
+//     }
+//     get area(){
+//         return Math.PI*this.radius*this.radius
+//     }
+// }
+
+// let mycircle=new Circle(5)
+// console.log(mycircle.radius);
+// console.log(mycircle.diameter);
+// console.log(mycircle.area);
+// mycircle.diameter=12
+// console.log(mycircle.radius);
+// console.log(mycircle.diameter);
+// console.log(mycircle.area);
+
+//static methods and properties(class level functions and variables)
+
+// class Anusuya{
+//     static fullname="Anusuya"
+//     static myinfo(){
+//         console.log("My name is Anusuya");
+//     }
+// }
+// Anusuya.myinfo()
+// console.log(Anusuya.fullname);
+
 
 
 
