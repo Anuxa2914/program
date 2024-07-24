@@ -1121,7 +1121,7 @@ let person = {
 // class Anusuya{
 //     static fullname="Anusuya"
 //     static myinfo(){
-//         console.log("My name is Anusuya");
+//         console.log("My name is Anusuya");git inint
 //     }
 // }
 // Anusuya.myinfo()
